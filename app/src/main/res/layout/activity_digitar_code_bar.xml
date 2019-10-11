@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <EditText
+        android:background="@drawable/line_black"
+        android:paddingBottom="5dp"
+        android:hint="Digite o código"
+        android:inputType="numberDecimal"
+        android:id="@+id/edt_text_digitar_code_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:visibility="gone"
+        android:text="Cadastrar"
+        android:id="@+id/button_salvar_code_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

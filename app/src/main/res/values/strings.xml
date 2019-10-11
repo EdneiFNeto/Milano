@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Milano</string>
+    <string name="db_name">app_db</string>
+    <string name="title_alert">Alerta</string>
+    <string name="mensagem_deletar">Deseja deletar lista ?</string>
+    <string name="button_sim">Sim</string>
+    <string name="button_nao">Não</string>
+    <string name="mensagem_digitar_cod">Digitar código de barra</string>
+    <string name="button_cancelar">Cancelar</string>
+    <string name="button_confirmar">Confirmar</string>
+</resources>
