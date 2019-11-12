@@ -23,6 +23,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    android {
+        sourceSets {
+            main {
+                aidl.srcDirs = ['src']
+            }
+        }
+    }
 }
 
 dependencies {
@@ -49,4 +57,7 @@ dependencies {
     implementation group: 'com.google.zxing', name: 'core', version: '3.2.0'
     // https://mvnrepository.com/artifact/com.journeyapps/zxing-android-embedded
     implementation group: 'com.journeyapps', name: 'zxing-android-embedded', version: '3.2.0'
+    //implementation 'com.google.android.gms:play-services:12.0.1'
+
+
 }

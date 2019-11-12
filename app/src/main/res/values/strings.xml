@@ -8,4 +8,5 @@
     <string name="mensagem_digitar_cod">Digitar código de barra</string>
     <string name="button_cancelar">Cancelar</string>
     <string name="button_confirmar">Confirmar</string>
+    <string name="hint_text">Code bar</string>
 </resources>
