@@ -26,6 +26,7 @@ class ScannerInfraRedActivity : AppCompatActivity() {
     private lateinit var editextCodigoDeBarra: EditText;
     private var listBarCode = ArrayList<String>()
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scanner_infra_red)
