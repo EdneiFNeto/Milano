@@ -9,4 +9,13 @@
     <string name="button_cancelar">Cancelar</string>
     <string name="button_confirmar">Confirmar</string>
     <string name="hint_text">Code bar</string>
+    <string name="name_avatar">Admin</string>
+    <string name="sub_title_avatar">Administrador</string>
+    <string name="title_item_historic">Histórico</string>
+    <string name="title_item_logout">Sair</string>
+    <string name="text_codigo_caixa">Código da Caixa</string>
+    <string name="num_codigo_caixa">210210212128192</string>
+    <string name="descr_caixa">Tipo Doc:Processado</string>
+    <string name="text_documento">Documento</string>
+    <string name="text_numero">Número</string>
 </resources>

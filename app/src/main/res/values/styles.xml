@@ -8,4 +8,22 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="TextViewCardCaixa">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+  <style name="TextHeaderNavigation">
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="edt_text_main">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/border_radius</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
 </resources>
