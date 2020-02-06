@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.CAMERA" />
-
     <permission android:name="android.permission.FLASHLIGHT" />
 
     <application
@@ -21,7 +20,8 @@
 
         <activity android:name=".ui.PrinterActivity" />
         <activity android:name=".ui.ScannerActivity" />
-        <activity android:name=".ui.ScannerActivityTest" />
+<!--        <activity android:name=".ui.ScannerActivityTest" />-->
+
         <activity android:name=".ui.DeviceListActivity" />
         <activity android:name=".ui.MainActivity"
             android:windowSoftInputMode="stateHidden">

@@ -3,6 +3,7 @@ package com.example.milano.async
 import android.content.Context
 import android.os.AsyncTask
 import android.util.Log
+import android.widget.ImageButton
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
 import com.example.milano.R
@@ -14,8 +15,8 @@ import com.github.clans.fab.FloatingActionButton
 
 class ListarProdutosAsyncTasks(
     private val context: Context,
-    var recycleView: RecyclerView,
-    var buttonFab: FloatingActionButton
+    var recyclerView: RecyclerView,
+    var buttonFab: ImageButton?
 ): AsyncTask<String, String, String>() {
 
     private val TAG: String="ListarProdutoLog"
@@ -37,8 +38,7 @@ class ListarProdutosAsyncTasks(
 
         if(produtos.isNotEmpty()){
             var adapter = ProdutoAdapter(context, produtos, buttonFab)
-            recycleView.adapter = adapter
-
+            recyclerView.adapter = adapter
         }
     }
 }

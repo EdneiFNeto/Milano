@@ -6,9 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.CheckBox
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
 import com.example.milano.R
 import com.example.milano.async.DeletarProdutoAsyncTasks
@@ -20,7 +18,7 @@ import java.io.Serializable
 class ProdutoAdapter(
     private val context: Context,
     private val produtos: List<Produto>,
-    private val buttonFab: FloatingActionButton
+    private val buttonFab: ImageButton?
 ) :
     RecyclerView.Adapter<ProdutoAdapter.ViewHolder>() {
 
@@ -56,14 +54,14 @@ class ProdutoAdapter(
 //            Log.e(TAG, "Total: ${listaProdutos.size}")
 //        }
 
-        buttonFab.setOnClickListener {
+        buttonFab?.setOnClickListener {
 
             if(produtos.isNotEmpty()){
                 for (p in produtos)
                     listaProdutos.add(p)
 
                 var intent = Intent(context, PrinterActivity::class.java)
-                intent.putExtra("produtos",listaProdutos as Serializable)
+                intent.putExtra("produtos", listaProdutos as Serializable)
                 context.startActivity(intent)
 
             }else{

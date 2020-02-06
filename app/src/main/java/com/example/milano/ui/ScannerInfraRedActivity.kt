@@ -31,6 +31,7 @@ class ScannerInfraRedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scanner_infra_red)
         editextCodigoDeBarra = findViewById<EditText>(R.id.edt_text_barcode_infra)
+
     }
 
     override fun onResume() {
@@ -38,7 +39,33 @@ class ScannerInfraRedActivity : AppCompatActivity() {
         var recyclerView = findViewById<RecyclerView>(R.id.listView_barcode)
         adapter = BarCodeAdapter(this, listBarCode)
         recyclerView.adapter = adapter
+
+
+        editextCodigoDeBarra.addTextChangedListener(object:TextWatcher{
+            override fun afterTextChanged(s: Editable?) {
+
+                Log.e(TAG, "afterTextChanged ${s.toString()}")
+                if(listBarCode.isNotEmpty()){
+                    listBarCode.clear()
+                }
+                listBarCode.add(s.toString())
+                adapter.notifyDataSetChanged()
+
+//                listBarCode.add(s.toString())
+//                adapter.notifyDataSetChanged()
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+
+            }
+
+            override fun onTextChanged(charSequence: CharSequence?, start: Int, before: Int, count: Int) {
+
+            }
+        })
     }
+
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
 
